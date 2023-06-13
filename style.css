@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,100&family=Rajdhani:wght@400;600&family=Roboto:wght@100&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.imagem-logo {
+    height: 200px;
+    width: 200px;
+    margin-left: 2rem;
+}
+
+.cabecalho-principal .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /*background: linear-gradient(to bottom, rgba(2, 0, 36, 1) 1%, rgba(132, 51, 73, 1) 10%, rgba(192, 75, 91, 1) 24%, rgba(218, 85, 98, 1) 30%);*/
+    background-color: #ff7180;
+}
+
+.aromas-nav {
+    margin-right: 2rem;
+}
+
+.aromas-nav-link {
+    text-decoration: none;
+    color: inherit;
+    padding: 2rem;
+    font-size: 22px;
+    color: white;
+    transition: 0.5s;
+}
+
+.aromas-nav-link:hover {
+    font-size: 30px;
+}
+
+.separar-conteudo {
+    background-color: #ff7180;
+    height: 100px;
+    width: auto;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    display: flex; /* Adiciona display flex */
+    flex-direction: column; /* Define a direção da coluna */
+    justify-content: flex-end; /* Alinha o conteúdo na parte inferior */
+}
+
+
+.conteudo-principal-texto {
+    background-color: #ff7180;
+
+}
+
+.conteudo-principal-texto p {
+    color: white;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.imagem-produto {
+    width: 500px;
+    height: 500px;
+}
+.conteudo-principal-produtos{
+    height: 800px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
+#um {
+    background-color: #da5562;
+}
+
+#dois {
+    background-color: #fccbf5;
+}
+
+#tres {
+    background-color: #9e4476;
+}
+
+.texto-apresentacao {
+    color: white;
+    font-size: 24px;
+    text-align: justify;
+    margin-left: 1rem;
+}
+
+        /* Estilos do botão */
+        .scroll-top-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #da5562;
+            color: white;
+            padding: 20px 30px;
+            border-radius: 5px;
+            display: none;
+            cursor: pointer;
+        }
+        
+.scroll-top-button span {
+    font-size: 24px; /* Aumente o valor para aumentar o tamanho da seta */
+}
+
+@media(max-width: 769px){
+
+    body {
+        background-color: #ff7180;
+    }
+    .cabecalho-principal .container {
+        flex-direction: column;
+        align-items: initial;
+        text-align: center;
+        margin-bottom: 100px;
+        }
+        .aromas-nav-link{
+            display: block;
+            margin-right: 0;
+            padding: 1rem;
+        }
+        .imagem-logo{
+            margin-left: 27%;
+        }
+        .conteudo-principal-produtos{
+            flex-direction: column;
+            height: auto;
+        }
+        .imagem-produto {
+            width: 200px;
+            height: 200px;
+            margin-bottom: 2rem;
+        }
+        .conteudo-principal-texto  p{
+            line-height: 1.5;
+        }
+
+
+}
